@@ -1,0 +1,94 @@
+/* default css */
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none !important;
+}
+:root{
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  --bs-link-color: #c12026;
+  --bs-link-hover-color: #a5121b;
+  --navbar-bg:#0F52BA;
+  --black:var(--bs-body-color);
+  --white:#ffffff;
+    --main-font: 'inter', sans-serif;
+    --yellow:#ffd700;
+    --blue:var(--navbar-bg)
+}
+@font-face {
+  font-family: 'regular';
+  src: url('/src/assets/fonts/regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+ font-family: 'bold';
+  src: url('/src/assets/fonts/bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'block';
+  src: url('/src/assets/fonts/black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: var(--main-font);
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.regular-font{
+  font-family: regular;
+}
+.bold-font{
+  font-family: bold;
+}
+.black-font {
+  font-family: block;
+}
+.blue{
+  color: var(--blue);
+}
+.pad-tb{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.blue-bg{
+  background-color: var(--blue);
+  color: var(--white);
+}
+.yellow-bg{
+  background-color: var(--yellow);
+  color: var(--black);
+}
+.white{
+  color: var(--white);
+}
+
+
+/* fonts size */
+.xxs-font{
+  font-size: 12px;
+}
+.xs-font{
+  font-size: 14px;
+}
+.sm-font{
+  font-size: 18px;
+}
+.md-font{
+  font-size: 24px;
+}
+.lg-font{
+  font-size: 32px;
+}
+.xl-font{
+  font-size: 40px;
+} 

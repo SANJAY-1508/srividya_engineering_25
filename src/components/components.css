@@ -1,0 +1,182 @@
+/* ===== Navbar Style ===== */
+.navbar-toggler {
+  border: none !important;
+  color: var(--white) !important;
+  padding: 0% !important;
+}
+
+.navbar-custom {
+  background: var(--navbar-bg, --black); /* fallback black background */
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--black);
+}
+
+.logo {
+  width: 100px;
+}
+
+/* ===== Nav Links ===== */
+.offcanvas.offcanvas-end {
+  width: 50% !important;
+}
+.nav-link-custom,
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-toggle {
+  color: var(--white) !important; /* white text */
+  font-weight: 500;
+  padding: 8px 30px !important;
+  position: relative;
+  transition: color 0.3s ease;
+  font-family: var(--main-font);
+  letter-spacing: 1.2px;
+}
+
+/* ✅ Hover and focus states (links + dropdown title) */
+.nav-link-custom:hover,
+.nav-link-custom:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .dropdown-toggle:hover,
+.navbar-nav .dropdown-toggle:focus {
+  color: var(--yellow) !important; /* yellow hover */
+}
+
+/* ===== Dropdown Menu ===== */
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  background-color: var(--black); /* match navbar background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Dropdown items */
+
+.dropdown-item {
+  padding: 10px 20px;
+  color: #fff; /* white text */
+  font-weight: 400;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* ✅ Dropdown item hover color */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: transparent;
+  color: #ffcc00; /* yellow hover */
+}
+/* ===== Multi-level Dropdown ===== */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none; /* Hidden by default */
+  background-color: var(--white);
+  border: none;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Show submenu when hovered */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Arrow indicator for submenu */
+.dropdown-submenu-title::after {
+  float: right;
+  margin-left: 10px;
+  font-size: 10px;
+  color: #fff;
+}
+
+/* Hover color for submenu items */
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--white);
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* btn start */
+.fixed-btn {
+  position: fixed;
+  top: 50%;
+  right: -46px;
+  transform: translateY(-50%) rotate(-90deg);
+  background-color: var(--yellow);
+  border: none;
+  padding: 7px 13px;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.35s ease; /* smooth transition */
+  z-index: 999;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+.fixed-btn:hover {
+  color: var(--black);
+  transform: translateY(-50%) rotate(-90deg) scale(1.07);
+  box-shadow: 0 8px 18px rgba(255, 204, 0, 0.5);
+}
+.fixed-btn a {
+  color: var(--black);
+  text-decoration: none;
+}
+.submit_btn{
+  background-color: var(--yellow);
+  color: var(--black);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 10px 0;
+}
+
+
+
+/* /footer style */
+.footer-links li{
+margin-bottom: 15px;
+}
+.footer_bg {
+  background: url("../assets/images/footer.JPG");
+  background-color: var(--black);
+  color: var(--white);
+  padding: 40px 0;
+  font-family: var(--main-font);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+      border-image: fill 0 linear-gradient(to right, #100f0f8c,#100f0f97  , #100f0f7a);
+
+}
+.social-link{
+      background: var(--blue);
+    padding: 2px 9px;
+    font-size: 19px;
+    border-radius: 50px;
+    height: 36px;
+    width: 36px;
+    color: var(--white);
+}

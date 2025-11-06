@@ -1,0 +1,30 @@
+/* Extra small devices (phones, 0px and up) */
+@media (max-width: 575.98px) {
+.image-text {
+    font-size: 80px;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your CSS for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your CSS for tablets */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your CSS for small desktops/laptops */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your CSS for large desktops */
+}
+
+/* Extra extra large devices (very wide screens, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your CSS for very large screens */
+}
